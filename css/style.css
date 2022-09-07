@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css');
+* {
+    box-sizing: border-box;
+ }
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+ }
+
+ header {
+    display: inline;
+ }
+
+ h2 {
+    color: #212121;
+ }
+  
+ h3 {
+    color: #213e3b;
+ }
+ 
+ h4 {
+  color: #213e3b;
+}
+
+ h5 {
+   color: #213e3b;
+}
+
+ main {
+    padding: 20px;
+ }
+ 
+ nav {
+    background-color: #086972;
+    padding: 5px;
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+ }
+
+ nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 15px;
+ }
+
+ nav a:hover {
+   background-color: #56c4be;
+ }
+
+ .active {
+   background-color: #41aea9;
+ }
+
+ nav ul {
+   padding: 5px;
+   margin-left: 10px;
+}
+
+ nav li {
+    display: inline;
+    list-style-type: none;
+    margin-right: 20px;
+ }
+ .jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-color: #41aea9;
+    text-align: center;
+    color: white;
+ }
+ 
+ .column {
+   float: left;
+   width: 50%;
+   margin-bottom: 16px;
+   padding: 0 8px;
+ }
+
+ .container {
+   padding: 0 16px;
+ }
+ 
+ .container::after, .product::after {
+   content: "";
+   clear: both;
+ }
+ 
+ button {
+  background-color: #086972; 
+  font-weight: bold;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+ }
+ 
+.button2 {background-color: #008CBA;} 
+.button3 {background-color: #f44336;}   
+.button4 {background-color: #4CAF50;;} 
+ 
+ button:hover {
+   background-color: #56c4be;
+ }
+
+ main {
+    padding: 20px;
+    overflow: auto;
+    
+ }
+
+ #content {
+    float: left;
+    width: 75%;
+ }
+ 
+ .checked {
+  color: orange;
+ }
+ 
+ aside {
+    float: right;
+    width: 25%;
+    padding-left: 20px;
+ }
+
+ .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 2px 16px;
+ }
+
+ .profile header {
+    text-align: center;
+ }
+ 
+ .featured-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+ }
+ 
+ .profile img {
+    width: 200px;
+ }
+
+ footer {
+    padding: 20px;
+    color: white;
+    background-color: #086972;
+    font-weight: bold;
+ }
+
+ .modal {
+   display: none;
+   position: fixed; 
+   z-index: 1; 
+   left: 0;
+   top: 0;
+   width: 100%; 
+   height: 100%; 
+   overflow: auto; 
+   background-color: rgb(0,0,0); 
+   background-color: rgba(0,0,0,0.4); 
+   -webkit-animation-name: fadeIn; 
+   -webkit-animation-duration: 0.4s;
+   animation-name: fadeIn;
+   animation-duration: 0.4s
+ }
+ 
+ .modal-content {
+   position: fixed;
+   bottom: 0;
+   background-color: #fefefe;
+   width: 100%;
+   -webkit-animation-name: slideIn;
+   -webkit-animation-duration: 0.4s;
+   animation-name: slideIn;
+   animation-duration: 0.4s
+ }
+ 
+ .close {
+   color: #000;
+   float: right;
+   font-size: 28px;
+   font-weight: bold;
+ }
+ 
+ .close:hover,
+ .close:focus {
+   color: #000;
+   text-decoration: none;
+   cursor: pointer;
+ }
+ 
+ .modal-header {
+   padding: 2px 16px;
+   background-color: #eeeeee;
+   color: white;
+ }
+ 
+ .modal-body {padding: 2px 16px;}
+ 
+ .modal-footer {
+   padding: 2px 16px;
+   background-color: #eeeeee;
+   color: white;
+ } 
+
+ .flex-grid-thirds {
+  display: flex;
+  justify-content: space-between;
+  
+}
+.flex-grid-thirds .col {
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 2px 16px;
+  margin: 10px;
+}
+
+ @-webkit-keyframes slideIn {
+   from {bottom: -300px; opacity: 0} 
+   to {bottom: 0; opacity: 1}
+ }
+ 
+ @keyframes slideIn {
+   from {bottom: -300px; opacity: 0}
+   to {bottom: 0; opacity: 1}
+ }
+ 
+ @-webkit-keyframes fadeIn {
+   from {opacity: 0} 
+   to {opacity: 1}
+ }
+ 
+ @keyframes fadeIn {
+   from {opacity: 0} 
+   to {opacity: 1}
+ }
+
+ @media screen and (max-width: 1000px) {
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+ }
+
+ @media screen and (max-width: 650px) {
+   .column {
+     width: 100%;
+     display: block;
+   }
+ }
+
+ @media (max-width: 800px) {
+  .flex-grid-thirds {
+    display: block;
+  }
+}
